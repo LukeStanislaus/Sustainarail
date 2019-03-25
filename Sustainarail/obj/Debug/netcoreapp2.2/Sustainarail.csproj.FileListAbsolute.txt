@@ -1,0 +1,11 @@
+C:\Users\Luke\source\repos\Sustainarail\Sustainarail\Sustainarail\bin\Debug\netcoreapp2.2\Sustainarail.deps.json
+C:\Users\Luke\source\repos\Sustainarail\Sustainarail\Sustainarail\bin\Debug\netcoreapp2.2\Sustainarail.runtimeconfig.json
+C:\Users\Luke\source\repos\Sustainarail\Sustainarail\Sustainarail\bin\Debug\netcoreapp2.2\Sustainarail.runtimeconfig.dev.json
+C:\Users\Luke\source\repos\Sustainarail\Sustainarail\Sustainarail\bin\Debug\netcoreapp2.2\Sustainarail.dll
+C:\Users\Luke\source\repos\Sustainarail\Sustainarail\Sustainarail\bin\Debug\netcoreapp2.2\Sustainarail.pdb
+C:\Users\Luke\source\repos\Sustainarail\Sustainarail\Sustainarail\obj\Debug\netcoreapp2.2\Sustainarail.csprojAssemblyReference.cache
+C:\Users\Luke\source\repos\Sustainarail\Sustainarail\Sustainarail\obj\Debug\netcoreapp2.2\Sustainarail.csproj.CoreCompileInputs.cache
+C:\Users\Luke\source\repos\Sustainarail\Sustainarail\Sustainarail\obj\Debug\netcoreapp2.2\Sustainarail.AssemblyInfoInputs.cache
+C:\Users\Luke\source\repos\Sustainarail\Sustainarail\Sustainarail\obj\Debug\netcoreapp2.2\Sustainarail.AssemblyInfo.cs
+C:\Users\Luke\source\repos\Sustainarail\Sustainarail\Sustainarail\obj\Debug\netcoreapp2.2\Sustainarail.dll
+C:\Users\Luke\source\repos\Sustainarail\Sustainarail\Sustainarail\obj\Debug\netcoreapp2.2\Sustainarail.pdb

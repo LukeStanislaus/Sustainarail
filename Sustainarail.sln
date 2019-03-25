@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sustainarail", "Sustainarail\Sustainarail.csproj", "{395EFDBE-F824-40E7-B5EB-528833EAD57C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SustainarailTest", "SustainarailTest\SustainarailTest.csproj", "{D019A6F1-0884-4BD2-A954-4DEF28F5F754}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{395EFDBE-F824-40E7-B5EB-528833EAD57C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{395EFDBE-F824-40E7-B5EB-528833EAD57C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{395EFDBE-F824-40E7-B5EB-528833EAD57C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D019A6F1-0884-4BD2-A954-4DEF28F5F754}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D019A6F1-0884-4BD2-A954-4DEF28F5F754}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D019A6F1-0884-4BD2-A954-4DEF28F5F754}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D019A6F1-0884-4BD2-A954-4DEF28F5F754}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
