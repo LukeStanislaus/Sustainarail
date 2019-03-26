@@ -7,9 +7,9 @@ namespace Sustainarail
 {
     enum TrainTypes
     {
-        Hitatchi9Car,
+        Hitachi9Car,
         InterCity1259Car,
-        Hitatchi5Car,
+        Hitachi5Car,
         InterCity1255Car,
         Class357
     }
@@ -35,7 +35,7 @@ namespace Sustainarail
         public Train(TrainTypes name, int speed, int capacity, List<Station> route, int totalUsage)
         {
             Name = name;
-            Speed = speed;
+            Speed = Convert.ToInt32(speed*0.8);
             Capacity = capacity;
             Route = route;
             CountOnTrain = 0;
@@ -46,11 +46,11 @@ namespace Sustainarail
         public List<Station> CalculateService()
         {
             Console.WriteLine("{0}:", Name.ToString());
-
+            bool reflecting = false;
             while (Time.Hours == 0)
             {
 
-                for (int j = 0; j < Route.Count; j++)
+                for (int j = reflecting?1:0; j < Route.Count; j++)
                 {
                     var station = Route[j];
                     var initialCount = CountOnTrain;
@@ -78,6 +78,7 @@ namespace Sustainarail
                     Console.WriteLine("         People which still need to enter station:{0}", station.Entering);
                 }
                 Route.Reverse();
+                reflecting = true;
             }
             if (Route[0].DistFromLondon != 0) Route.Reverse();
 
@@ -110,7 +111,7 @@ namespace Sustainarail
         {
             for (int i = 0; i < Railway.Count; i++)
             {
-                Console.WriteLine("Station:{0} People Leaving:{1}, People Entering:{2}", 
+                Console.WriteLine("Station:{0}\n      People Leaving:{1}\n     People Entering:{2}", 
                   Railway[i].Name, Railway[i].Leaving, Railway[i].Entering);
 
             }
@@ -129,22 +130,34 @@ namespace Sustainarail
                 {BristolTempleMeads, BathSpa, Chippenham, Swindon, Didcot, Reading, LondonPaddington};
             Railway.Reverse();
             var result = Railway;
-            for (int i = 0; i < 5; i++)
+            // Hitachi 9 Car
+            Console.WriteLine("Count of Hitachi 9 Car Trains");
+            var hitatchi9s = int.Parse(Console.ReadLine());
+            for (int i = 0; i < hitatchi9s; i++)
             {
-                var Hitatchi = new Train(TrainTypes.Hitatchi9Car, 140, 627, result, 28393);
-                result = Hitatchi.CalculateService();
-            }            
-            for (int i = 0; i < 5; i++)
+                var Hitachi = new Train(TrainTypes.Hitachi9Car, 140, 627, result, 28393);
+                result = Hitachi.CalculateService();
+            }
+            // Inter City 9 Car
+            Console.WriteLine("Count of Inter City 9 Car Trains");
+            var intecity9s = int.Parse(Console.ReadLine());
+            for (int i = 0; i < intecity9s; i++)
             {
                 var InterCity = new Train(TrainTypes.InterCity1259Car, 125, 531, result, 28393);
                 result = InterCity.CalculateService();
             }
-            for (int i = 0; i < 5; i++)
+            // Hitachi 5 Car
+            Console.WriteLine("Count of Hitachi 5 Car Trains");
+            var hitatchi5s = int.Parse(Console.ReadLine());
+            for (int i = 0; i < hitatchi5s; i++)
             {
-                var Hitatchi = new Train(TrainTypes.Hitatchi5Car, 140, 315, result, 28393);
-                result = Hitatchi.CalculateService();
-            }
-            for (int i = 0; i < 5; i++)
+                var Hitachi = new Train(TrainTypes.Hitachi5Car, 140, 315, result, 28393);
+                result = Hitachi.CalculateService();
+            }            
+            // Inter City 5 Car
+            Console.WriteLine("Count of Inter City 9 Car Trains");
+            var intecity5s = int.Parse(Console.ReadLine());
+            for (int i = 0; i < intecity5s; i++)
             {
                 var InterCity = new Train(TrainTypes.InterCity1255Car, 125, 274, result, 28393);
                 result = InterCity.CalculateService();
@@ -152,25 +165,43 @@ namespace Sustainarail
             if (result[0].DistFromLondon != 0)
             {
                 result.Reverse();
-            }          
-            for (int i = 0; i < 5; i++)
+            }              
+            // Class 357 5 Car Westbound
+            Console.WriteLine("Count of Class 357 5 Car Trains, London Westbound");
+            var class357westbound = int.Parse(Console.ReadLine());
+            for (int i = 0; i < class357westbound; i++)
             {
-                var Class357 = new Train(TrainTypes.Class357, 100, 282, result.Take(4).ToList(), 28393);
+                // London Westbound Electric
+                var Class357 = new Train(TrainTypes.Class357, 100, 282, result.Take(4).ToList(), 20917);
                 var r = Class357.CalculateService();
+                if (r[0].Name != "LondonPaddington")
+                {
+                    r.Reverse();
+                }
                 result[0] = r[0];
                 result[1] = r[1];
                 result[2] = r[2];
+                result[3] = r[3];
             }
             if (result[0].DistFromLondon == 0)
             {
                 result.Reverse();
-            }          
-            for (int i = 0; i < 5; i++)
+            }                
+            // Class 357 5 Car Eastbound
+            Console.WriteLine("Count of Class 357 5 Car Trains, Bristol Eastbound");
+            var class357eastbound = int.Parse(Console.ReadLine());
+            for (int i = 0; i < class357eastbound; i++)
             {
-                var Class357 = new Train(TrainTypes.Class357, 100, 282, result.Take(2).ToList(), 28393);
+                // Bristol Eastbound Electric
+                var Class357 = new Train(TrainTypes.Class357, 100, 282, result.Take(3).ToList(), 6500);
                 var r= Class357.CalculateService();
+                if (r[0].Name != "BristolTempleMeads")
+                {
+                    r.Reverse();
+                }
                 result[0] = r[0];
                 result[1] = r[1];
+                result[2] = r[2];
             }
             for (int i = 0; i < result.Count; i++)
             {
