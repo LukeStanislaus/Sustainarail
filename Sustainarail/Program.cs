@@ -217,6 +217,7 @@ namespace Sustainarail
                     Console.WriteLine("Works");
                 }
             }
+            Console.ReadKey();
 
         }
     }
