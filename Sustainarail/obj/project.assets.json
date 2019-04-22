@@ -477,7 +477,7 @@
       ]
     },
     "Microsoft.NETCore.DotNetAppHost/2.2.0": {
-      "sha512": "qIrVLupwT2NYTrf7KM7Nh+mJr36V5MITVRjyGOByVVCwGmQgQmI/6bjZYQv+QdExi4Cm87eCKJX9FdT6nc00Xg==",
+      "sha512": "OK/H8p9Ig6mLMITjXJ4VOewrJg/TU+dAPHE4BdMWMv+8COzBehf7XF1+DofKkmqdHpO2cJoS5Sc9PEZ6PKCbsg==",
       "type": "package",
       "path": "microsoft.netcore.dotnetapphost/2.2.0",
       "files": [
@@ -686,23 +686,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Luke.SONYLAPTOP\\.nuget\\packages\\": {},
+    "C:\\Users\\Luke\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Luke.SONYLAPTOP\\source\\repos\\LukeStanislaus\\Sustainarail\\Sustainarail\\Sustainarail.csproj",
+      "projectUniqueName": "c:\\Users\\Luke\\source\\repos\\Sustainarail\\Sustainarail\\Sustainarail\\Sustainarail.csproj",
       "projectName": "Sustainarail",
-      "projectPath": "C:\\Users\\Luke.SONYLAPTOP\\source\\repos\\LukeStanislaus\\Sustainarail\\Sustainarail\\Sustainarail.csproj",
-      "packagesPath": "C:\\Users\\Luke.SONYLAPTOP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Luke.SONYLAPTOP\\source\\repos\\LukeStanislaus\\Sustainarail\\Sustainarail\\obj\\",
+      "projectPath": "c:\\Users\\Luke\\source\\repos\\Sustainarail\\Sustainarail\\Sustainarail\\Sustainarail.csproj",
+      "packagesPath": "C:\\Users\\Luke\\.nuget\\packages\\",
+      "outputPath": "c:\\Users\\Luke\\source\\repos\\Sustainarail\\Sustainarail\\Sustainarail\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Luke.SONYLAPTOP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Luke\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
